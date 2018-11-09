@@ -12,6 +12,9 @@
 		"eslint:fix": "eslint --fix ./src",
 		"precommit": "pretty-quick --staged"
 	},
+	"engines": {
+		"node": "10.10.0"
+	},
 	"author": "Jaroslav_Lesiv",
 	"license": "ISC",
 	"dependencies": {
