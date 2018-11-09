@@ -1,0 +1,54 @@
+
+h2.section-title.color-white(data-before="/*", data-after="*/") Contacts
+.contacts.flex.flex-justify-sa
+    .contact-block.flex.flex-column
+        h2.contact-title My Contact
+        ul.flex.flex-column.contact-list
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/location.png")
+                .flex.flex.justify-start.flex-column
+                    strong Location
+                    p Economicheska 12, Kherson, Ukrain
+            
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/telegram.png")
+                .flex.flex.justify-start.flex-column
+                    strong Telegram
+                    a.link.snake(href="https://telegram.me/Jaroslav_Lesiv") @Jaroslav_Lesiv
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/instagram.png")
+                .flex.flex.justify-start.flex-column
+                    strong Instagram
+                    a.text-elipsis.link.snake(href="https://www.instagram.com/jaroslav_lesiv/", target="_blank") https://www.instagram.com/jaroslav_lesiv/ 
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/outlook.png")
+                .flex.flex.justify-start.flex-column
+                    strong Email
+                    a.text-elipsis.link.snake(href="mailto:jaroslav.webdeva@gmail.com") jaroslav.webdeva@gmail.com
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/telephone.png")
+                .flex.flex.justify-start.flex-column
+                    strong Phone
+                    a(href="call:+380951620180").link.snake +380951620180
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/chipmunk.png")
+                .flex.flex.justify-start.flex-column
+                    strong My team
+                    a.link.snake(href="https://codingchipmunks.com/") CodingChipmunks
+    form#contact_form.contact-block.flex.flex-column(data-label="Sending messages...")
+        h2.contact-title Have a question or want to work together?
+        ul.flex.flex-column.contact-list
+            li.flex.flex-align-start
+                .contact-list-item.flex.flex-align-start.flex-grow
+                    .flex.flex.justify-start.flex-column.full-width
+                        strong Name
+                        input#contact_name.ipt(type="text", name="name", placeholder="John")
+                .contact-list-item.flex.flex-align-start.flex-grow
+                    .flex.flex.justify-start.flex-column.full-width
+                        strong Email
+                        input#contact_email.ipt(type="email", name="mail", required, placeholder="email@example.com")
+            li.contact-list-item.flex.flex-align-center.flex-column
+                strong.text-left Message
+                textarea#contact_message.ipt(type="text", name="name", placeholder="Type your messages...", rows="10", style="resize: none")
+            li.contact-list-item.flex.flex-align-center
+                button.btn.btn-primary(type="submit") Send messages

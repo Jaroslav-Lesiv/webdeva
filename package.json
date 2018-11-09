@@ -1,0 +1,35 @@
+{
+	"name": "personal-pages",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch": "parcel watch src/index.pug",
+		"start": "parcel src/index.pug",
+		"build": "parcel build src/index.pug -d build",
+		"deploy": "node scripts/deploy",
+		"eslint": "eslint ./src",
+		"eslint:fix": "eslint --fix ./src",
+		"precommit": "pretty-quick --staged"
+	},
+	"author": "Jaroslav_Lesiv",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"compression": "^1.7.3",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"gh-pages": "^1.2.0",
+		"parcel": "^1.9.2"
+	},
+	"devDependencies": {
+		"axios": "^0.18.0",
+		"babel-core": "^6.26.3",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"postcss-modules": "^1.1.0",
+		"pug": "^2.0.3",
+		"stylus": "^0.54.5"
+	}
+}

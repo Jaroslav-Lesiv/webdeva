@@ -1,0 +1,185 @@
+.nav
+    position fixed
+    left 0
+    top 0
+    bottom: 0
+    width: ($navWidth)px
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $dark
+    flex-wrap: wrap
+    z-index: 10
+    transition: 0.1s
+    background: $bg
+    &-toggle_menu
+        position fixed
+        cursor pointer
+        right: 8px
+        top: 8px
+        width: 45px
+        height: 45px
+        display: none
+        flex-direction: column
+        background-color: #ffffff;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 10;
+        padding: 0
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.2)
+        :nth-child(1)
+            top: 10px
+        :nth-child(2)
+            top: 18px
+        :nth-child(3)
+            top: 26px
+        
+        span.btn-line
+            width: 30px
+            position absolute
+            height: 4px
+            left: 8px;
+            border-radius: 4px
+            background-color: $primary
+            transition: 0.4s
+            margin: 3px 0
+        &.active
+            span.btn-line
+                // width: 40px
+                position: absolute;
+                top: 47%;
+                left: 8px;
+                margin: 0;
+            :nth-child(1)
+                transform: rotate(45deg)
+            :nth-child(2)
+                transform: translateX(100px)
+            :nth-child(3)
+                transform: rotate(-45deg)
+                
+
+    &.transform
+        background-color: $dark
+    .list
+        z-index: 1
+        &-item
+            
+            @media all and (max-width 360px)
+                padding: 4px
+            a
+                font-size: 12px
+                transition: 1s
+                &.btn-primary
+                    transform: rotateX(360deg)
+    &-links
+        width: 100%
+        margin-top: auto
+        padding-bottom: 20px
+        ul
+            li
+                .icon
+                    font-size: 50px
+                    margin: 0 10px 25px
+                    cursor pointer
+                    color: #ffffff
+                    &:hover
+                        color: $primary
+    @media all and (max-width 991px)
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        min-height: 60px
+        background-color: rgba($primary, .5)
+        width: 80vw
+        transition: ($duration)s
+        transform: translateX(-1000px)
+        &-toggle_menu
+            display: flex
+        &.active
+            transform: translateX(0)
+.logo-wrapper
+    position relative
+    display: flex
+    justify-content: center
+    align-items: center
+    .logo
+        &:before
+            position absolute
+            content: ''
+            left: 0
+            right: 0
+            bottom: 0
+            top: 0
+            transition: ($duration)s
+    a
+        position: absolute
+        width: 35px
+        height: 35px
+        transition: ($duration)s
+    a:nth-child(1)
+        left: 0
+        top: 0
+        &:hover ~ .logo
+            box-shadow: -5px -5px 10px 0 rgba(0,0,0,.5) 
+
+    a:nth-child(2)
+        right: 0
+        top: 0
+        transition-delay: 100ms
+        &:hover ~ .logo
+            box-shadow: 5px -5px 10px 0 rgba(0,0,0,.5)
+    a:nth-child(3)
+        left: 0
+        bottom: 0
+        transition-delay: 200ms
+        &:hover ~ .logo
+            box-shadow: -5px 5px 10px 0 rgba(0,0,0,.5)
+    a:nth-child(4)
+        right: 0
+        bottom: 0
+        transition-delay: 300ms
+        &:hover ~ .logo
+            box-shadow: 5px 5px 10px 0 rgba(0,0,0,.5)
+
+    &:hover
+        a
+            z-index 2
+            
+        a:nth-child(1)
+            left: 25px
+            top: 25px
+        a:nth-child(2)
+            right: 25px
+            top: 25px
+        a:nth-child(3)
+            left: 25px
+            bottom: 25px
+        a:nth-child(4)
+            right: 25px
+            bottom: 25px
+        .logo 
+            &:before
+                background-color: rgba($primary, 0.4)
+
+.logo
+    width: 150px
+    height: 150px
+    max-height: 150px
+    border-radius: 50%
+    border: 8px solid $secondary
+    overflow: hidden
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    transition: ($duration)s
+    box-shadow: $boxShadow
+    z-index: 1
+    @media all and (max-width 360px)
+        width: 120px
+        height: 120px
+        max-height: 120px
+        border: 4px solid $secondary
+    &:hover
+        box-shadow: $boxShadowHovered

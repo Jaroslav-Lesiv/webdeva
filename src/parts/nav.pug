@@ -1,0 +1,42 @@
+nav#nav.nav
+    div.flex.flex-align-center.flex-column.flex-justify-column.nav-mobile
+        .logo-wrapper.mb-25
+            a(href="https://www.instagram.com/jaroslav_lesiv/", target="_blank").icon-button
+                img.contact-logo(src="./assets/img/icon/instagram.png")
+            a(href="skype:jaroslav.webdeva?chat", target="_blank").icon-button
+                img.contact-logo(src="./assets/img/icon/skype-primary.svg")
+            a(href="mailto:jaroslav.webdeva@gmail.com", target="_blank").icon-button
+                img.contact-logo(src="./assets/img/icon/gmail-primary.svg")
+            a(href="https://telegram.me/Jaroslav_Lesiv", target="_blank").icon-button
+                img.contact-logo(src="./assets/img/icon/telegram.png")
+            .logo
+                img(src="./assets/img/me.png")
+
+        ul.list
+            li.list-item.flex.flex-justify-center
+                a.link.link-local.text-uppercase(href="/about", title="About Me").btn.btn-primary About Me
+            li.list-item.flex.flex-justify-center
+                a.link.link-local.text-uppercase(href="/whyme", title="Why Me").btn.btn-primary Why Me?
+            li.list-item.flex-justify-center.flex
+                a.link.link-local.text-uppercase(href="/skills", title="Skills").btn Skills
+            li.list-item.flex-justify-center.flex
+                a.link.link-local.text-uppercase(href="/examples", title="Lates work").btn Lates work
+            li.list-item.flex-justify-center.flex
+                a.link.link-local.text-uppercase(href="/services", title="Services").btn Services
+            li.list-item.flex-justify-center.flex
+                a.link.link-local.text-uppercase(href="/contacts", title="Contacts").btn Contacts
+    .nav-links
+        ul.flex.flex-align-center.flex-justify-sb
+            li.transition.hover-animate-scale
+                a(href="https://github.com/Jaroslav-Lesiv", target="_blank")
+                    span.icon.devicons.devicons-github_badge.icon-shadow
+            li.transition.hover-animate-scale
+                a(href="https://github.com/Jaroslav-Lesiv", target="_blank")
+                    span.icon.devicons.devicons-codepen.icon-shadow
+            li.transition.hover-animate-scale
+                a(href="https://bitbucket.org/jaroslav_lesiv/", target="_blank")
+                    span.icon.devicons.devicons-bitbucket.icon-shadow
+.nav-toggle_menu#nav-toggle_menu.slideInDown.transition
+    span.btn-line
+    span.btn-line
+    span.btn-line
