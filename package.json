@@ -23,6 +23,9 @@
 		"cors": "^2.8.5",
 		"express": "^4.16.4",
 		"gh-pages": "^1.2.0",
+		"gulp": "^3.9.1",
+		"gulp-sprite-generator": "^0.2.3",
+		"jsdom": "^13.0.0",
 		"parcel": "^1.9.2"
 	},
 	"devDependencies": {
@@ -31,6 +34,7 @@
 		"babel-plugin-transform-class-properties": "^6.24.1",
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
+		"node-sprite-generator": "^0.10.2",
 		"postcss-modules": "^1.1.0",
 		"pug": "^2.0.3",
 		"stylus": "^0.54.5"
