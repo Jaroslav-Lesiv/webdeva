@@ -1,4 +1,6 @@
 const navLinks = document.querySelectorAll('#nav ul.list li a');
+const homeSection = document.querySelector('#home');
+const header = document.querySelector('#header');
 
 function debounce(func, wait, immediate) {
 	var timeout;
@@ -36,10 +38,19 @@ const ScrollControl = class {
 		window.addEventListener('scroll', _ => this.sectionHandler());
 		this.linksHandler();
         this._updateNavigation = debounce(this.updateNavigation, 30);
-        if (this.hash && this.hash !== '/') this.updateSections()
+		if (this.hash && this.hash !== '/') this.updateSections()
+		this.sectionHandler()
 	}
 
 	sectionHandler() {
+		if (window.innerWidth < 991) {
+			console.log(window.scrollY > homeSection.offsetHeight, window.scrollY, homeSection)
+			if (window.scrollY > homeSection.offsetHeight && !header.classList.contains('scrolled')) {
+				header.classList.add('scrolled')
+			} else if (window.scrollY < homeSection.offsetHeight && header.classList.contains('scrolled')) {
+				header.classList.remove('scrolled')
+			}
+		}
 		for (let node of this.nodeList) {
 			const coords = node.node.getBoundingClientRect();
 			const isCurrent = coords.top >= 0 || coords.bottom - 40 > 0;
@@ -77,7 +88,7 @@ const ScrollControl = class {
 	updateSections() {
 		const node = this.nodeList.find(node => node.hash === this.hash).node;
 		window.scrollTo({
-			top: node.offsetTop,
+			top: node.offsetTop - 30,
 			behavior: 'smooth'
 		});
 	}
@@ -91,6 +102,7 @@ const MobileControl = class {
 	constructor() {
 		this.isActive = false;
 		this.button = document.querySelector('#nav-toggle_menu');
+		this.header = document.querySelector('#header');
 		this.nav = document.querySelector('#nav');
 		this.button.addEventListener('click', () => this.toggle());
 		this.main = document.querySelector('.main');

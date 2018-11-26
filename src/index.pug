@@ -10,17 +10,19 @@ html(lang="en")
       main.main
         section.section
           #particles-js.particles-js
-          #about.container.flex-justify-sa.flex-align-center
-            include ./parts/about.pug
-        #whyme.container.flex-align-top.flex-justify-sa
+          #home.container.flex-align-center.flex-justify-sa.section-rotate.section-dark.home-section
+            include ./parts/home.pug
+        #why-me.container.flex-align-center.flex-justify-sa
           include ./parts/whyme.pug
-        #skills.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
-          include ./parts/skills.pug
+        #about-me.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
+          include ./parts/about-me.pug
         #examples.container.flex-align-top.flex-justify-sa
           include ./parts/examples.pug
+        #skills.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
+          include ./parts/skills.pug
 
-        #services.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
-          include ./parts/services.pug
+        //- #services.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
+        //-   include ./parts/services.pug
         #contacts.container.flex-align-center.flex-justify-sa.contacts-wrapper
             include ./parts/contacts.pug
         

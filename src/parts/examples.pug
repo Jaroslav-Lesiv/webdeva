@@ -1,9 +1,18 @@
 h2.section-title.color-white(data-before="(", data-after=")") Lates work
-
-.flex.flex-align-start.flex-justify-center.hide.animated(data-animate="slideInDown", data-start="scroll")
+//- .fade
+//-   transition $duration
+//-   opacity: 0
+//-   &-left
+//-     transform: translateX(-100px)
+//-   &-right
+//-     transform: translateX(100px)
+//-   &.active
+//-     opacity: 1
+//-     transform: translateX(0)
+.flex.flex-align-start.flex-justify-center
     .examples.flex.flex-align-start.flex-justify-center
     .device-list
-        .example-item
+        .example-item.fade.fade-left.animated(data-animate="active", data-start="scroll")
             .device-wrapper
                 .desktop.device-shadow
                     .monitor.lazy-load(realbg="ng_desktop")
@@ -11,23 +20,23 @@ h2.section-title.color-white(data-before="(", data-after=")") Lates work
                     .monitor.lazy-load(realbg="ng_mobile")
             .example-content
                 strong
-                    a.snake.card-label(href="https://normalgame.net") NormalGame
+                    a.snake.color-secondary(href="https://normalgame.net") NormalGame
                 .platform-list
                     strong Platform:
                         span  Web
-                p.card-description Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        .example-item
+                p.card-description This is a place where you and your friends can create teams in your favorite games, compete, win tournaments and just have fun.
+        .example-item.fade.fade-down.animated(data-animate="active", data-start="scroll")
             .device-wrapper
                 .desktop.device-shadow
                     .monitor.lazy-load(realbg="gw_list")
             .example-content
-                a.snake.card-label(href="https://github.com/Jaroslav-Lesiv/goodWorker")
+                a.snake.color-secondary(href="https://github.com/Jaroslav-Lesiv/goodWorker")
                     strong GoodWorker (Desktop App)
                 .platform-list
                     strong Platform:
                         span  Web, Linux, Windows, MacOS
                 p.card-description Simple time tracking app for Windows, Mac, and Linux which helps you to control your time, increase productivity, monitor your team performance. 
-        .example-item
+        .example-item.fade.fade-right.animated(data-animate="active", data-start="scroll")
             .device-wrapper 
                 .mobile.device-shadow
                     .monitor.lazy-load(realbg="cam_list")
@@ -37,12 +46,12 @@ h2.section-title.color-white(data-before="(", data-after=")") Lates work
                     .monitor.lazy-load(realbg="cam_news")
             .example-content
                 strong
-                    a.snake.card-label(href="https://play.google.com/store/apps/details?id=com.codingchipmunks.cryptarena") CryptArena (Mobile App)
+                    a.snake.color-secondary(href="https://play.google.com/store/apps/details?id=com.codingchipmunks.cryptarena") CryptArena (Mobile App)
                 .platform-list
                     strong Platform:
                         span  Android IOS
                 p.card-description CryptArena - is a Price Ticker + Coin Market Capitalization and offers complete cryptocurrency management, with easy to use tools to keep track of all your cryptocurrency investments and understand the market cap of each cryptocoin. 
-        .example-item
+        .example-item.fade.fade-left.animated(data-animate="active", data-start="scroll")
             .device-wrapper
                 .desktop.device-shadow
                     .monitor.lazy-load(realbg="jlm_desktop")
@@ -50,12 +59,12 @@ h2.section-title.color-white(data-before="(", data-after=")") Lates work
                     .monitor.lazy-load(realbg="jlm_mobile")
             .example-content
                 strong
-                    a.snake.card-label(href="http://just-label.me") JustLabelMe
+                    a.snake.color-secondary(href="http://just-label.me") JustLabelMe
                 .platform-list
                     strong Platform:
                         span  Web
                 p.card-description With JustLabelMe service, you’ll save a lot of time because you can print perfectly onto 4”x6” sticker labels, peel them and place them right on the package!
-        .example-item
+        .example-item.fade.fade-down.animated(data-animate="active", data-start="scroll")
             .device-wrapper
                 .desktop.device-shadow
                     .monitor.lazy-load(realbg="nomis_desktop")
@@ -63,18 +72,18 @@ h2.section-title.color-white(data-before="(", data-after=")") Lates work
                     .monitor.lazy-load(realbg="nomis_mobile")
             .example-content
                 strong
-                    a.snake.card-label(href="http://nomis.com.ua") Nomis
+                    a.snake.color-secondary(href="http://nomis.com.ua") Nomis
                 .platform-list
                     strong Platform:
                         span  Web
                 p.card-description The NOMIS analytics service helps you understand how decent and solvent your potential or current supplier, buyer, or competitor is.
-        .example-item
+        .example-item.fade.fade-right.animated(data-animate="active", data-start="scroll")
             .device-wrapper
                 .desktop.device-shadow
                     .monitor.lazy-load(realbg="jlme_desktop")
             .example-content
                 strong 
-                    a.snake.card-label(href="https://normalgame.net") JustLabelMe (Browser Extension)
+                    a.snake.color-secondary(href="https://chrome.google.com/webstore/detail/justlabelme/bpfpmjjojjekdeliaeepcnccikcjpiph") JustLabelMe (Browser Extension)
                 .platform-list
                     strong Platform:
                         span  Web

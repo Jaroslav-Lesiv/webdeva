@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import './navigation';
 import './notification';
 import './lazyLoad';

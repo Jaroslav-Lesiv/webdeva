@@ -1,3 +1,42 @@
+.header
+    position: sticky
+    top: 0
+
+    position: fixed
+    left: 0
+    right: 0
+
+    background-color: $dark
+    padding: 10px
+    display: none
+    align-items: center
+    z-index 100
+    justify-content: space-between
+    transition: 0.4s    
+    @media (max-width: 991px)
+        display: flex;
+    &.scrolled
+        background-color: #ffffff
+        box-shadow: $boxShadow
+
+        .nav-toggle_menu
+            background-color: #ffffff
+            .dots-line
+                background-color: $dark;
+    .header-logo
+        display flex
+        align-items: center
+        img
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            overflow: hidden
+            border: 1px solid #ffffff
+            margin-right: 10px
+    .logo-label
+        color: $primary
+
+
 .nav
     position fixed
     left 0
@@ -5,6 +44,7 @@
     bottom: 0
     width: ($navWidth)px
     min-height: 100vh
+    padding 80px 60px 60px
     display: flex
     justify-content: center
     align-items: center
@@ -14,49 +54,34 @@
     transition: 0.1s
     background: $bg
     &-toggle_menu
-        position fixed
-        cursor pointer
-        right: 8px
-        top: 8px
-        width: 45px
-        height: 45px
-        display: none
-        flex-direction: column
-        background-color: #ffffff;
         border-radius: 50%;
-        overflow: hidden;
-        z-index: 10;
-        padding: 0
-        box-shadow: 0 0 5px 1px rgba(0,0,0,0.2)
-        :nth-child(1)
-            top: 10px
-        :nth-child(2)
-            top: 18px
-        :nth-child(3)
-            top: 26px
-        
-        span.btn-line
-            width: 30px
-            position absolute
-            height: 4px
-            left: 8px;
-            border-radius: 4px
-            background-color: $primary
-            transition: 0.4s
-            margin: 3px 0
-        &.active
-            span.btn-line
-                // width: 40px
-                position: absolute;
-                top: 47%;
-                left: 8px;
-                margin: 0;
-            :nth-child(1)
-                transform: rotate(45deg)
-            :nth-child(2)
-                transform: translateX(100px)
-            :nth-child(3)
-                transform: rotate(-45deg)
+        z-index: 2;
+        margin-left: 10px;
+        min-width: 40px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        background-color: $dark;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        display: none;
+        flex-direction: column;
+        transition: 0.4s;
+        .dots-line
+            display: flex;
+            width: 20px;
+            height: 4px;
+            border-radius: 10px;
+            margin: 1.5px 0;
+            background-color: #ffffff;
+            transition: 0.5s;
+        @media (max-width: 767px)
+            display: flex;
+        &.active 
+            transform: rotate(45deg);
+            span.dots-line 
+                width: 4px;
+                margin: 2px 0;
                 
 
     &.transform
@@ -91,10 +116,10 @@
         left: 0
         right: 0
         min-height: 60px
-        background-color: rgba($primary, .5)
-        width: 80vw
+        background-color: rgba($dark, .9)
+        width: 100vw
         transition: ($duration)s
-        transform: translateX(-1000px)
+        transform: translateX(100%)
         &-toggle_menu
             display: flex
         &.active

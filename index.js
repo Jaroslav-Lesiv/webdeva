@@ -11,7 +11,7 @@ app.use(compression());
 
 const router = {
 	'/': {
-		title: 'WebDeva - Create your business with us',
+		title: 'WebDeva - Website development, desktop and mobile applications',
 		description: 'WebDeva - Create your business with us'
 	},
 	'/whyme': {

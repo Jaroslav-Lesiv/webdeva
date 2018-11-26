@@ -1,21 +1,23 @@
 const loadImages = document.querySelectorAll('.lazy-load') || [];
 const images = {
-    'gw_list': require('../../img/examples/goodWorker/gw_list.png'),
+	gw_list: require('../../img/examples/goodWorker/gw_list.png'),
 
-    'ng_desktop': require('../../img/examples/normalgame/ng_desktop.png'),
-    'ng_mobile': require('../../img/examples/normalgame/ng_mobile.png'),
+	ng_desktop: require('../../img/examples/normalgame/ng_desktop.png'),
+	ng_mobile: require('../../img/examples/normalgame/ng_mobile.png'),
 
-    'cam_list': require('../../img/examples/cryptarena-mobile/cam_mobile_list.png'),
-    'cam_coin': require('../../img/examples/cryptarena-mobile/cam_mobile_coin.png'),
-    'cam_news': require('../../img/examples/cryptarena-mobile/cam_mobile_news.png'),
+	cam_list: require('../../img/examples/cryptarena-mobile/cam_mobile_list.png'),
+	cam_coin: require('../../img/examples/cryptarena-mobile/cam_mobile_coin.png'),
+	cam_news: require('../../img/examples/cryptarena-mobile/cam_mobile_news.png'),
 
-    'jlm_desktop': require('../../img/examples/jlm/jlm_desktop.png'),
-    'jlm_mobile': require('../../img/examples/jlm/jlm_mobile.png'),
-    'jlme_desktop': require('../../img/examples/jlm/jlme_desktop.jpg'),
+	jlm_desktop: require('../../img/examples/jlm/jlm_desktop.png'),
+	jlm_mobile: require('../../img/examples/jlm/jlm_mobile.png'),
+	jlme_desktop: require('../../img/examples/jlm/jlme_desktop.jpg'),
 
-    'nomis_desktop': require('../../img/examples/nomis/nomis_desktop.png'),
-    'nomis_mobile': require('../../img/examples/nomis/nomis_mobile.png'),
-}
+	nomis_desktop: require('../../img/examples/nomis/nomis_desktop.png'),
+	nomis_mobile: require('../../img/examples/nomis/nomis_mobile.png'),
+	responsive: require('../../img/icon/responsive.png'),
+	checklist: require('../../img/icon/checklist.png')
+};
 const LazyLoad = class {
 	constructor({ images }) {
 		this.images = images;
@@ -46,7 +48,7 @@ const LazyLoad = class {
 		const _src = elem.getAttribute('realsrc');
 		const _bg = elem.getAttribute('realbg');
 		if (_src) {
-			elem.src = _src;
+			elem.src = images[_src] || _src;
 			this.images = Array.prototype.slice
 				.call(this.images)
 				.filter(image => image !== elem);
@@ -55,7 +57,7 @@ const LazyLoad = class {
 			this.images = Array.prototype.slice
 				.call(this.images)
 				.filter(image => image !== elem);
-        }
+		}
 	}
 };
 

@@ -389,3 +389,18 @@ i {
 // for num in (1..30)
 //   {selector('.skill-' + num)}
 //     animation-delay: (num*50)ms
+
+.fade
+  transition ($duration)s
+  opacity: 0
+  &-left
+    transform: translateX(-100px)
+  &-right
+    transform: translateX(100px)
+  &-down
+    transform: translateY(100px)
+  &-up
+    transform: translateY(-100px)
+  &.active
+    opacity: 1
+    transform: translateX(0)

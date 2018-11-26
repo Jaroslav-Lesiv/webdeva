@@ -5,6 +5,7 @@ body
     overflow-x: hidden
     @media all and (max-width 991px)
         padding-left: 0
+        padding-top: 60px
 .background
     position: fixed;
     top: 0
@@ -44,6 +45,8 @@ body
     display: flex
     flex-direction: column
     transition: filter ($duration)s 
+    @media all and (max-width 991px)
+        padding: 0 10px
 
 ul
     padding: 0
@@ -61,8 +64,10 @@ ul
     flex-wrap: wrap
     padding: 50px
     position relative
-    @media all and (max-width 990px)
+    @media all and (max-width 1290px)
         padding: 50px 20px
+    @media all and (max-width 990px)
+        padding: 50px 15px
     @media all and (max-width 767px)
         padding: 50px 10px
     @media all and (max-width 556px)
@@ -270,3 +275,7 @@ div.lazy-load
 
 .circle
     border-radius: 50%
+
+.text-bracket
+    display: flex
+    align-items: center
