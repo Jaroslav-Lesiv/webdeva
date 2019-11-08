@@ -11,7 +11,26 @@ h2.section-title.color-white(data-before="(", data-after=")") Lates work
 //-     transform: translateX(0)
 .flex.flex-align-start.flex-justify-center
     .examples.flex.flex-align-start.flex-justify-center
-    .device-list
+    .device-list.blog-content
+
+        .example-item.fade.fade-right.animated(data-animate="active", data-start="scroll")
+            .device-wrapper 
+                .mobile.device-shadow
+                    .monitor.lazy-load(realbg="jm_main")
+                .mobile.device-shadow
+                    .monitor.lazy-load(realbg="jm_qr")
+                .mobile.device-shadow
+                    .monitor.lazy-load(realbg="jm_map")
+            .example-content
+                strong.flex-justify-se.flex
+                    a.snake.color-secondary(href="https://play.google.com/store/apps/details?id=com.jobmap&hl=ru") JobMap (Android)
+                    a.snake.color-secondary(href="https://apps.apple.com/us/app/jobmap-find-jobs-around-you/id1484863357") JobMap (iOS)
+                .platform-list
+                    strong Platform:
+                        span  Android IOS
+                p.card-description 
+                    | <a href="https://www.jobmap.co/">JobMap</a> will help you find local jobs so that you can easily apply to local employers without the hassle of a useless commute - all with the help of video selfies, instant messaging, attachable CV, etc...
+                    | Explore jobs on the map, discover hidden opportunities & even see the latest history of your sent resumes. JobMap keeps your life simple.
         .example-item.fade.fade-left.animated(data-animate="active", data-start="scroll")
             .device-wrapper
                 .desktop.device-shadow
@@ -20,11 +39,15 @@ h2.section-title.color-white(data-before="(", data-after=")") Lates work
                     .monitor.lazy-load(realbg="ng_mobile")
             .example-content
                 strong
-                    a.snake.color-secondary(href="https://normalgame.net") NormalGame
+                    a.snake.color-secondary(href="https://ezone.gg/") Ezone.gg
                 .platform-list
                     strong Platform:
                         span  Web
-                p.card-description This is a place where you and your friends can create teams in your favorite games, compete, win tournaments and just have fun.
+                p.card-description 
+                    | <a href="https://ezone.gg/">Ezone.gg</a> — the first free-to-play eSport manager simulator. 
+                    | Here you can create your dream team and decide what it will do. Manage your funds and players’ contracts, train your team, fight with other users for the best prizes — real skins in CS:GO!!!
+                    | All you need to do is register in our game and start playing.
+                    | Enjoy!
         .example-item.fade.fade-down.animated(data-animate="active", data-start="scroll")
             .device-wrapper
                 .desktop.device-shadow
@@ -62,8 +85,8 @@ h2.section-title.color-white(data-before="(", data-after=")") Lates work
                     a.snake.color-secondary(href="http://just-label.me") JustLabelMe
                 .platform-list
                     strong Platform:
-                        span  Web
-                p.card-description With JustLabelMe service, you’ll save a lot of time because you can print perfectly onto 4”x6” sticker labels, peel them and place them right on the package!
+                        span  Web, Desktop (Windows, MacOS, Linux)
+                p.card-description With <a href="http://just-label.me">JustLabelMe</a> service, you’ll save a lot of time because you can print perfectly onto 4”x6” sticker labels, peel them and place them right on the package!
         .example-item.fade.fade-down.animated(data-animate="active", data-start="scroll")
             .device-wrapper
                 .desktop.device-shadow
@@ -76,7 +99,7 @@ h2.section-title.color-white(data-before="(", data-after=")") Lates work
                 .platform-list
                     strong Platform:
                         span  Web
-                p.card-description The NOMIS analytics service helps you understand how decent and solvent your potential or current supplier, buyer, or competitor is.
+                p.card-description The <a href="http://nomis.com.ua">NOMIS</a> analytics service helps you understand how decent and solvent your potential or current supplier, buyer, or competitor is.
         .example-item.fade.fade-right.animated(data-animate="active", data-start="scroll")
             .device-wrapper
                 .desktop.device-shadow
@@ -86,5 +109,5 @@ h2.section-title.color-white(data-before="(", data-after=")") Lates work
                     a.snake.color-secondary(href="https://chrome.google.com/webstore/detail/justlabelme/bpfpmjjojjekdeliaeepcnccikcjpiph") JustLabelMe (Browser Extension)
                 .platform-list
                     strong Platform:
-                        span  Web
+                        span  Web, Chrome, Firefox
                 p.card-description Provides the ability to transform & print FBA shipping and product labels while you are on Amazon Seller Central with a single click

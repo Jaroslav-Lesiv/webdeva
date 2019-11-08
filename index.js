@@ -11,32 +11,32 @@ app.use(compression());
 
 const router = {
 	'/': {
-		title: 'WebDeva - Website development, desktop and mobile applications',
-		description: 'WebDeva - Create your business with us'
+		title: 'J.L. - Website development, desktop and mobile applications',
+		description: 'J.L. - Create your business with us'
 	},
 	'/whyme': {
-		title: 'WebDeva - Why Me? - Create your business with us',
-		description: 'WebDeva - Create your business with us'
+		title: 'J.L. - Why Me? - Create your business with us',
+		description: 'J.L. - Create your business with us'
 	},
 	'/about': {
-		title: 'WebDeva - About - Create your business with us',
-		description: 'WebDeva - Create your business with us'
+		title: 'J.L. - About - Create your business with us',
+		description: 'J.L. - Create your business with us'
 	},
 	'/skills': {
-		title: 'WebDeva - Skills - Create your business with us',
-		description: 'WebDeva - Create your business with us'
+		title: 'J.L. - Skills - Create your business with us',
+		description: 'J.L. - Create your business with us'
 	},
 	'/examples': {
-		title: 'WebDeva - Examples - Create your business with us',
-		description: 'WebDeva - Create your business with us'
+		title: 'J.L. - Examples - Create your business with us',
+		description: 'J.L. - Create your business with us'
 	},
 	'/services': {
-		title: 'WebDeva - Services - Create your business with us',
-		description: 'WebDeva - Create your business with us'
+		title: 'J.L. - Services - Create your business with us',
+		description: 'J.L. - Create your business with us'
 	},
 	'/contacts': {
-		title: 'WebDeva - Contacts - Create your business with us',
-		description: 'WebDeva - Create your business with us'
+		title: 'J.L. - Contacts - Create your business with us',
+		description: 'J.L. - Create your business with us'
 	}
 };
 

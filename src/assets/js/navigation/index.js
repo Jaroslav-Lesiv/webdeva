@@ -76,7 +76,7 @@ const ScrollControl = class {
 		this.links.forEach(link => {
 			if (link.hash === this.hash) {
 				link.node.classList.add('btn-primary');
-				const title = `WebDeva - ${link.title}`;
+				const title = `J.L. - ${link.title}`;
 				window.history.replaceState(null, null, link.hash);
 				window.document.title = title;
 			} else {

@@ -9,6 +9,10 @@ const images = {
 	cam_coin: require('../../img/examples/cryptarena-mobile/cam_mobile_coin.png'),
 	cam_news: require('../../img/examples/cryptarena-mobile/cam_mobile_news.png'),
 
+	jm_main: require('../../img/examples/jm/jm-main.png'),
+	jm_qr: require('../../img/examples/jm/jm-qr.jpg'),
+	jm_map: require('../../img/examples/jm/jm-map.png'),
+
 	jlm_desktop: require('../../img/examples/jlm/jlm_desktop.png'),
 	jlm_mobile: require('../../img/examples/jlm/jlm_mobile.png'),
 	jlme_desktop: require('../../img/examples/jlm/jlme_desktop.jpg'),

@@ -1,6 +1,6 @@
 
 h2.section-title.color-white(data-before="/*", data-after="*/") Contacts
-.contacts.flex.flex-justify-sa
+.contacts.flex.flex-justify-sa.blog-content
     .contact-block.flex.flex-column
         h2.contact-title My Contact
         ul.flex.flex-column.contact-list
@@ -9,7 +9,11 @@ h2.section-title.color-white(data-before="/*", data-after="*/") Contacts
                 .flex.flex.justify-start.flex-column
                     strong Location
                     p Economicheska 12, Kherson, Ukrain
-            
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/linkedin.png")
+                .flex.flex.justify-start.flex-column
+                    strong LinkedIn
+                    a.link.snake(href="https://www.linkedin.com/in/jaroslav-webdeva/") Jaroslav Lesiv
             li.contact-list-item.flex.flex-align-center
                 img.contact-logo(src="./assets/img/icon/telegram.png")
                 .flex.flex.justify-start.flex-column
@@ -47,7 +51,7 @@ h2.section-title.color-white(data-before="/*", data-after="*/") Contacts
                     .flex.flex.justify-start.flex-column.full-width
                         strong Email
                         input#contact_email.ipt(type="email", name="mail", required, placeholder="email@example.com")
-            li.contact-list-item.flex.flex-align-center.flex-column
+            li.contact-list-item.flex.flex-column
                 strong.text-left Message
                 textarea#contact_message.ipt(type="text", name="name", placeholder="Type your messages...", rows="10", style="resize: none")
             li.contact-list-item.flex.flex-align-center

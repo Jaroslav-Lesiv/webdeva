@@ -24,7 +24,7 @@ const TextBracket = class {
 		this.duration = duration;
         this.words = keywords.split(',');
         
-		this.wordContainer = div.cloneNode();
+		this.wordContainer = strong.cloneNode();
         this.current = 0;
         this.createNode()
     }
