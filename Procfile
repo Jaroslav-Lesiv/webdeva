@@ -1,2 +1,2 @@
-release: npm run build
-web: node index.js
+release: node index.js
+web:  npm run build

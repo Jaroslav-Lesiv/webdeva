@@ -23,6 +23,7 @@ body
     // scroll-behavior: smooth
 .blog-content
     max-width: 1280px
+    z-index: 5
 
 .particles-js
   position: fixed;
@@ -54,6 +55,13 @@ ul
     margin: 0
     li
         list-style: none
+        &.point
+            margin-left: 35px
+            position: relative;
+            list-style: initial;
+            @media all and (max-width 991px)
+                margin-left: 15px
+
 .small_image
     position: relative
     width: 30px

@@ -2,7 +2,7 @@
 // import { _notification } from '../notification'
 const form = document.getElementById('contact_form')
 
-form.addEventListener('submit', this.submitForm)
+
 
 const serializeForm = form => {
 	let formData = {};
@@ -56,7 +56,7 @@ const submitForm = async (event, count = 0) => {
 			// 	title: "Oops! Wake up your connection!",
 			// 	subtitle: "Your internet seems too slow to reach our server <br/> Please try againg in few minutes"
 			// });
-            // return;
+            return;
             console.log('SEND ERROR')
 		}
 		console.log({ error });
@@ -64,3 +64,5 @@ const submitForm = async (event, count = 0) => {
 		submitForm(event, ++count);
 	}
 };
+
+form.addEventListener('submit', submitForm)

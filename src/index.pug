@@ -12,10 +12,11 @@ html(lang="en")
           #particles-js.particles-js
           #home.container.flex-align-center.flex-justify-sa.section-rotate.section-dark.home-section
             include ./parts/home.pug
-        #why-me.container.flex-align-center.flex-justify-sa
-          include ./parts/whyme.pug
-        #about-me.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
+        #about-me.container.flex-align-center.flex-justify-sa
           include ./parts/about-me.pug
+        #why-me.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
+          include ./parts/whyme.pug
+        
         #examples.container.flex-align-top.flex-justify-sa
           include ./parts/examples.pug
         #skills.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
@@ -27,7 +28,8 @@ html(lang="en")
             include ./parts/contacts.pug
         include ./parts/footer.pug
           
-    script(src="https://platform.linkedin.com/badges/js/profile.js", async, defer)
+    //- script(src="https://platform.linkedin.com/badges/js/profile.js", async, defer)
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     script(src="assets/js/particles.js")
     script(src="assets/js/main.js")
     

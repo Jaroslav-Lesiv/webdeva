@@ -17,6 +17,8 @@ const images = {
 	jlm_mobile: require('../../img/examples/jlm/jlm_mobile.png'),
 	jlme_desktop: require('../../img/examples/jlm/jlme_desktop.jpg'),
 
+	rwrd_desktop: require('../../img/examples/rwrd/rwrd-desktop.png'),
+
 	nomis_desktop: require('../../img/examples/nomis/nomis_desktop.png'),
 	nomis_mobile: require('../../img/examples/nomis/nomis_mobile.png'),
 	responsive: require('../../img/icon/responsive.png'),
