@@ -4,18 +4,20 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"watch": "parcel watch src/index.pug",
 		"start": "parcel src/index.pug",
 		"build": "parcel build src/index.pug -d build",
-		"serve": "node ./index.js",
+
 		"deploy": "node scripts/deploy",
+
 		"eslint": "eslint ./src",
 		"eslint:fix": "eslint --fix ./src",
 		"precommit": "pretty-quick --staged",
-		"run": "npm run build && npm run serve"
+
+		"server-start": "babel-node backend/index.js",
+		"server-watch": "nodemon --exec yarn server-start"
 	},
 	"engines": {
-		"node": "10.10.0"
+		"yarn": "1.17.3"
 	},
 	"author": "Jaroslav_Lesiv",
 	"license": "ISC",
@@ -29,7 +31,12 @@
 		"gulp": "^3.9.1",
 		"gulp-sprite-generator": "^0.2.3",
 		"jsdom": "^13.0.0",
-		"parcel": "^1.9.2"
+		"parcel": "^1.9.2",
+		"config": "^1.30.0",
+		"html-template": "^1.2.2",
+		"node-telegram-bot-api": "^0.30.0",
+		"nodemon": "^1.19.1",
+		"validate.js": "^0.13.1"
 	},
 	"devDependencies": {
 		"axios": "^0.18.0",
@@ -40,6 +47,7 @@
 		"node-sprite-generator": "^0.10.2",
 		"postcss-modules": "^1.1.0",
 		"pug": "^2.0.3",
-		"stylus": "^0.54.5"
+		"stylus": "^0.54.5",
+		"babel-cli": "^6.26.0"
 	}
 }
