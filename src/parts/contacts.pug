@@ -47,12 +47,15 @@ h2.section-title.color-white(data-before="/*", data-after="*/") Contacts
                     .flex.flex.justify-start.flex-column.full-width
                         strong Name
                         input#contact_name.ipt(type="text", name="name", placeholder="John")
+                        p.form-error
                 .contact-list-item.flex.flex-align-start.flex-grow
                     .flex.flex.justify-start.flex-column.full-width
                         strong Email
-                        input#contact_email.ipt(type="email", name="mail", required, placeholder="email@example.com")
+                        input#contact_email.ipt(type="email", name="email", placeholder="email@example.com")
+                        p.form-error
             li.contact-list-item.flex.flex-column
                 strong.text-left Message
-                textarea#contact_message.ipt(type="text", name="name", placeholder="Type your messages...", rows="10", style="resize: none")
+                textarea#contact_message.ipt(type="text", name="message", placeholder="Type your messages...", rows="10", style="resize: none")
+                p.form-error
             li.contact-list-item.flex.flex-align-center
                 button.btn.btn-primary(type="submit") Send messages

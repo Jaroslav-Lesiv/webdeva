@@ -2,9 +2,9 @@ export const SITE_MESSAGE_VALIDATION = {
   name: {
     presence: { allowEmpty: false },
   },
-  subject: {
-    type: "string"
-  },
+  // subject: {
+  //   type: "string"
+  // },
   email: {
     presence: { allowEmpty: false },
     email: true

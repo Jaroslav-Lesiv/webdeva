@@ -3,13 +3,13 @@ html(lang="en")
   include ./parts/head.pug
   
   body
-    //- #background.background
+    include ./mixins/forms
     .wrapper
       include ./parts/nav.pug
       
       main.main
         section.section
-          #particles-js.particles-js
+          #particles-js.particles-jss
           #home.container.flex-align-center.flex-justify-sa.section-rotate.section-dark.home-section
             include ./parts/home.pug
         #about-me.container.flex-align-center.flex-justify-sa
@@ -27,6 +27,10 @@ html(lang="en")
         #contacts.container.flex-align-center.flex-justify-sa.contacts-wrapper
             include ./parts/contacts.pug
         include ./parts/footer.pug
+
+        footer
+          div 
+            +_infoModal
           
     //- script(src="https://platform.linkedin.com/badges/js/profile.js", async, defer)
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>

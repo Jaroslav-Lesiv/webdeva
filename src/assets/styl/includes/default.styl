@@ -295,3 +295,66 @@ div.lazy-load
 .text-bracket
     display: flex
     align-items: center
+
+
+// INFO MODAL
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1030;
+  visibility: hidden;
+  &-backdrop {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1040;
+  }
+
+  &-children {
+    border-radius: 6px;
+    box-shadow: 0 20px 30px rgba(125, 147, 178, 0.3);
+    background: #fff;
+    padding: 60px;
+    z-index: 1050;
+    transition: 0.4s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.4);
+    max-width: 600px;
+
+    img {
+      max-width: 170px;
+    }
+
+    @media all and (max-width: 991px) {
+      padding: 40px;
+    }
+    @media all and (max-width: 691px) {
+      padding: 20px;
+    }
+  }
+
+  &.active {
+    visibility: visible;
+    .modal-children {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    .modal-backdrop {
+      display: flex;
+      filter: blur(4px);
+    }
+  }
+}

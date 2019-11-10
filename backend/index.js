@@ -24,6 +24,7 @@ const handlePage = (req, res) => {
 
 app.post("/message", async (req, res) => {
 	try {
+		console.log(req.body)
 		await handleSiteMessage(req.body);
 		res.status(200).send({ success: true });
 	} catch (error) {
