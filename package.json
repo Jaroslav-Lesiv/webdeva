@@ -45,7 +45,7 @@
 		"babel-preset-env": "^1.7.0",
 		"node-sprite-generator": "^0.10.2",
 		"postcss-modules": "^1.1.0",
-		"pug": "^2.0.3",
+		"pug": "^3.0.1",
 		"stylus": "^0.54.5"
 	}
 }
