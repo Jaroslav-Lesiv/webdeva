@@ -29,7 +29,7 @@
 		"gulp": "^3.9.1",
 		"gulp-sprite-generator": "^0.2.3",
 		"html-template": "^1.2.2",
-		"jsdom": "^13.0.0",
+		"jsdom": "^16.5.0",
 		"node-telegram-bot-api": "^0.30.0",
 		"nodemon": "^1.19.1",
 		"parcel": "^1.9.2",
